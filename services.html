@@ -42,6 +42,10 @@
 
 		input[type=submit] {background-color: #4CAF50; color: white; padding: 12px 20px; border: none; border-radius: 4px; cursor: pointer; font-family: Arial, Helvetica, sans-serif;}
 
+		.column {float: left; width: 33.33%; padding: 30px; text-align: center; font-size: 25px; cursor: pointer; color: white; border-style: solid; border-color: #BB563F}
+		.containerTab {padding: 20px; color: white; }
+		.row:after {content: ""; display: table; clear: both;}
+
 
 
 	</style>
@@ -52,9 +56,9 @@
 <section>
 	<nav>
 		<div class="topnav">
-			<a class="active" href="nmayor4.github.io/namearoach/services.html">Services</a>
-			<a href="nmayor4.github.io/namearoach/contact.html">Contact</a>
-			<a href="nmayor4.github.io/namearoach/home.html">Home</a>
+			<a class="active"href="services.html">Services</a>
+			<a href="contact.html">Contact</a>
+			<a href="home.html">Home</a>
 		  
 		</div>
 	</nav>
@@ -63,7 +67,26 @@
 <h1>Bronx Zoo Presents: <strong>Name a Roach</strong></h1>
 <section>
 	<article>
-		
+		<div class="row">
+	  <div class="column" onclick="openTab('b1');" style="background: #eed3cd;">Box 1</div>
+	  <div class="column" onclick="openTab('b2');" style="background: #eed3cd;">Box 2</div>
+	  <div class="column" onclick="openTab('b3');" style="background: #eed3cd;">Box 3</div>
+	</div>
+
+		<div id="b1" class="containerTab" style="display:none; background:green">
+		  <h2>Box 1</h2>
+		  <p>Lorem ipsum..</p>
+		</div>
+
+		<div id="b2" class="containerTab" style="display:none; background:blue">
+		  <h2>Box 2</h2>
+		  <p>Lorem ipsum..</p>
+		</div>
+
+		<div id="b3" class="containerTab" style="display:none; background:red">
+		  <h2>Box 3</h2>
+		  <p>Lorem ipsum..</p>
+		</div>
 
 
 	</article>
@@ -74,6 +97,8 @@
 <h3>Disclaimer: based on a real donation campaign by Bronx Zoo.</h3>
 <hr class="rounded">
 <h3 style="font-size: 10px">2300 Southern Blvd, The Bronx, NY 10460</h3>
+<h3 style="font-size: 10px">(718) 367-1010</h3>
+
 
 
 </body>
