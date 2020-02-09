@@ -46,9 +46,12 @@
 
 		input[type=submit] {background-color: #4CAF50; color: white; padding: 12px 20px; border: none; border-radius: 4px; cursor: pointer; font-family: Arial, Helvetica, sans-serif;}
 
-		.column {float: left; width: 33.33%; padding: 30px; text-align: center; font-size: 25px; cursor: pointer; color: white; border-style: solid; border-color: #BB563F}
+		/*.column {float: left; width: 33.33%; padding: 30px; text-align: center; font-size: 25px; cursor: pointer; color: white; border-style: solid; border-color: #BB563F}
 		.containerTab {padding: 20px; color: white; }
-		.row:after {content: ""; display: table; clear: both;}
+		.row:after {content: ""; display: table; clear: both;}*/
+
+		.row {display: flex;}
+		.column {flex: 50%; padding: 10px; font-family: Merriweather, Garamond, Georgia, Times;}
 
 	</style>
 </head>
@@ -67,29 +70,31 @@
 </section>
 
 <h1>Bronx Zoo Presents: <strong>Name a Roach</strong></h1>
+<h1 style="font-size: 32px">What's it gonna be?</h1>
 <section>
 	<article>
+		
 		<div class="row">
-	  <div class="column" onclick="openTab('b1');" style="background: #eed3cd;">Box 1</div>
-	  <div class="column" onclick="openTab('b2');" style="background: #eed3cd;">Box 2</div>
-	  <div class="column" onclick="openTab('b3');" style="background: #eed3cd;">Box 3</div>
-	</div>
+		  <div class="column" style="background-color:#eed3cd; border-style: solid; border-color: #BB563F; margin-left: 50px; margin-right: 20px">
+		    <h3 style="font-size: 30px">Name a Roach</h3>
+		    <p>Take advantage of our sweet Valentine's Day deal and buy a cockroach in honor of a loved one--or an unloved one. For only $15 USD, we'll name a Madagascar hissing roaches for you and feed it to one of our zoo animals on February 14. Don't miss out!</p>
 
-		<div id="b1" class="containerTab" style="display:none; background:green">
-		  <h2>Box 1</h2>
-		  <p>Lorem ipsum..</p>
+		    <p>Buy your roach <a href="https://bronxzoo.com/roach" style="color:#BB563F">here</a> and take a look at our other products while you're at it.</p>
+		  </div>
+		  <div class="column" style="background-color:#eed3cd; border-style: solid; border-color: #BB563F; margin-right: 50px">
+		    <h3 style="font-size: 30px; padding: 0px">Roach Romance</h3>
+		    <p>Bring your loved ones down to the Bronx Zoo this Valentine's Day for a truly unique after-hours experience. Meet some of our animals, say hi to the Madagascar hissing cockroaches, and explore the laws of attraction in this one night only event!</p>
+
+			<p>Event is 21+ only. Valid ID card required.</p>
+
+			<p>Buy your ticket <a href="https://tickets.wcs.org/mainstore?l=2&sid=925604992&vid=5&__utma=37610611.2057427587.1437661187.1480625661.1480631893.170&__utmb=37610611.3.9.1480631895619&__utmc=37610611&__utmx=-&__utmz=37610611.1480625661.169.28.utmcsr=wcs.org|utmccn=(referral)|utmcmd=referral|utmcct=/parks/programs&__utmv=-&__utmk=172141025&guid=0E609E7A-4B55-4B4E-A5DE-E8E6AC911B85&venueId=5&_ga=2.58284265.297953447.1581184282-1610074652.1581184282#cat1175" style="color:#BB563F">here</a>. </p>
+
+			<h3 style="padding: 0px">February 14, 2020 6:00PM - 7:30PM</h3>
+
+		  </div>
 		</div>
-
-		<div id="b2" class="containerTab" style="display:none; background:blue">
-		  <h2>Box 2</h2>
-		  <p>Lorem ipsum..</p>
-		</div>
-
-		<div id="b3" class="containerTab" style="display:none; background:red">
-		  <h2>Box 3</h2>
-		  <p>Lorem ipsum..</p>
-		</div>
-
+</br>
+</br>
 
 	</article>
 
