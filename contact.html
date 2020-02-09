@@ -31,17 +31,24 @@
 		.button {background-color: #BB563F; border: none; color: #333; padding: 10px 20px; text-align: center; font-size: 25px; cursor: pointer; text-decoration: none; font-family: Merriweather, Garamond, Georgia, Times;}
 		.button:hover {background-color: #F7EAE7; color: #BB563F;}
 		.parallax {background-image: url("https://i.ibb.co/7KK8HkS/roach-PNG12156.png"); height: 40%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: auto;}
-		/*turned off for mobile*/
 		@media only screen and (max-device-width: 1366px) {
   		.parallax {background-attachment: scroll;}	}
+
   		.center {display: block; margin-left: auto; margin-right: auto; width: 50%;}
   		.container {border-radius: 5px; background-color: #f2f2f2; padding: 20px; margin-left: auto; margin-right: auto; width: 30%;}
+  		@media only screen and (max-device-width: 1366px) {
+  		.container {width: 30%;}	}
+
   		hr.rounded {border-top: 5px solid #BB563F; border-radius: 5px;}
   		.label {color: #FFFFFF; padding: 8px; font-family: Arial, Helvetica, sans-serif;}
 
   		input[type=text], select, textarea {width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; margin-top: 6px; margin-bottom: 16px; resize: vertical; font-family: Arial, Helvetica, sans-serif;}
 
 		input[type=submit] {background-color: #4CAF50; color: white; padding: 12px 20px; border: none; border-radius: 4px; cursor: pointer; font-family: Arial, Helvetica, sans-serif;}
+
+		.column {float: left; width: 33.33%; padding: 30px; text-align: center; font-size: 25px; cursor: pointer; color: white; border-style: solid; border-color: #BB563F}
+		.containerTab {padding: 20px; color: white; }
+		.row:after {content: ""; display: table; clear: both;}
 
 	</style>
 </head>
